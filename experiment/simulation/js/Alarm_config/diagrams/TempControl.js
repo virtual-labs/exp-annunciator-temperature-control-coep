@@ -7,9 +7,14 @@ function TempControl(){
     //x = 310;
 	//y = 160;
 	
-	x = 300;
+	if ($(window).width() <= 1368) {
+	 x = 300;
+	y = 90;
+  }else
+  {
+  x = 300;
 	y = 300;
-
+  }
 	
 	 var TL_tank = TL_Tank (x, y);
 	 
